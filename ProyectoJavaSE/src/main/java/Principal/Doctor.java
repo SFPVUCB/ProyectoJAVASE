@@ -14,9 +14,11 @@ public class Doctor
         this.speciality = "";
     }
 
-    public Doctor(String name)
+    public Doctor(String name, String speciality)
     {
+        id=id+1;
         this.name = name;
+        this.speciality = speciality;
     }
 
     //comportamientos
@@ -29,4 +31,12 @@ public class Doctor
         System.out.println("ID del doctor: "+id);
     }
 
+    @Override
+    public String toString()
+    {
+        return "Doctor{" +
+                "name='" + name + '\'' +
+                ", speciality='" + speciality + '\'' +
+                '}';
+    }
 }

@@ -3,6 +3,7 @@ import java.util.Scanner;
 //Para hacer ams limpio el codigo en main, para modularizar y para evitar la implentacion.
 public class UIMenu
 {
+    public static String [] MONTHS= {"Enero","Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Dciciembre"};
      public static void showMenu(){
         System.out.println("Welcome to My Appointments");
         System.out.println("Selecciona la opción deseada");
@@ -15,10 +16,12 @@ public class UIMenu
 
             Scanner sc = new Scanner(System.in);
             response = Integer.valueOf(sc.nextLine());
+            System.out.println(sc);
 
             switch (response){
                 case 1:
                     System.out.println("Doctor");
+
                     break;
                 case 2:
                     response = 0;
@@ -33,7 +36,7 @@ public class UIMenu
             }
         }while (response != 0);
     }
-    public static void showPatientMenu(){
+     static void showPatientMenu(){
         int response = 0;
         do {
             System.out.println("\n\n");
@@ -48,6 +51,10 @@ public class UIMenu
             switch (response){
                 case 1:
                     System.out.println("::Book an appointment");
+                    for (int i=0;i<3;i++)
+                    {
+                        System.out.println(i+". "+MONTHS[i]);
+                    }
                     break;
                 case 2:
                     System.out.println("::My appointments");
