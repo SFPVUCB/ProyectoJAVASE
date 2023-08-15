@@ -2,34 +2,34 @@ package Principal;
 
 import javax.swing.*;
 
+import java.util.Date;
+
 import static Principal.UIMenu.*;
 
 public class Main {
     public static void main(String[] args)
     {
-        /*
-        Doctor myDoctor = new Doctor();
-        myDoctor.name= "Sergio Prudencio";
-        myDoctor.showName();
-        myDoctor.showId();
-        System.out.println("Imprmiendo el objeto: "+myDoctor);
-        System.out.println("-------------------");
-        Doctor myDoctorAnn = new Doctor();
-        myDoctorAnn.name= "Fernando Prudencio";
-        myDoctorAnn.showName();
-        myDoctorAnn.showId();
-         */
+
         //showMenu();
         Doctor myDoctor = new Doctor("Fercho","Pediatria");
+        myDoctor.addAvailableAppointment(new Date(),"4 pm");
+        myDoctor.addAvailableAppointment(new Date(),"10 am");
+        myDoctor.addAvailableAppointment(new Date(),"5 pm");
         System.out.println(myDoctor);
-        myDoctor.showId();
+
+        System.out.println("----------------------------------------");
 
         Patient patient = new Patient("Alice","alice@gmail.com");
-        patient.setWeight(54.6);
-        System.out.println(patient.getWeight());
-        patient.setPhoneNumber("12345678");
-        System.out.println(patient.getPhoneNumber());
+        Patient patient2 = new Patient("Maria","maria@gmail.com");
 
+        System.out.println(patient.getName());
+        System.out.println(patient2.getName());
+        patient=patient2;
+        System.out.println(patient.getName());
+        System.out.println(patient2.getName());
+        patient2.setName("Manuel");
+        System.out.println(patient.getName());
+        System.out.println(patient2.getName());
 
 
 
