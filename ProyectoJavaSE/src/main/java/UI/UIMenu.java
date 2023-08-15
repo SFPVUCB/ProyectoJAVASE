@@ -1,4 +1,4 @@
-package Principal;
+package UI;
 import java.util.Scanner;
 //Para hacer ams limpio el codigo en main, para modularizar y para evitar la implentacion.
 public class UIMenu

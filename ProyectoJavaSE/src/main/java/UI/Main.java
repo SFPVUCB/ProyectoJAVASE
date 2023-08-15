@@ -1,10 +1,9 @@
-package Principal;
+package UI;
 
-import javax.swing.*;
+import model.Doctor;
+import model.Patient;
 
 import java.util.Date;
-
-import static Principal.UIMenu.*;
 
 public class Main {
     public static void main(String[] args)
