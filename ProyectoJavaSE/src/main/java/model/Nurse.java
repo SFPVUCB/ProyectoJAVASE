@@ -23,4 +23,13 @@ public class Nurse extends User
 
     //TO STRING
 
+    //METODO ABSTRACTO
+    @Override
+    public void showDataUser()
+    {
+        System.out.println("Hospital: Cruz Verde");
+        System.out.println("Departamento: Nutriologia, Pediatria");
+
+    }
+
 }

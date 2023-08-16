@@ -54,5 +54,13 @@ public class Patient extends User
                 ", blood='" + blood + '\'' +
                 '}';
     }
+    //Metodos Abstractos
+    @Override
+    public void showDataUser()
+    {
+        System.out.println("Paciente");
+        System.out.println("Historial completo desde nacimiento");
+
+    }
 }
 

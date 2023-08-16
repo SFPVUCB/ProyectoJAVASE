@@ -73,8 +73,6 @@ public abstract class User
                 ", phoneNumber='" + phoneNumber + '\'' +
                 '}';
     }
-    //GETTERS AND SETTERS
-
     //Comporamientos /  Metodos
     public void showName()
     {
@@ -85,4 +83,6 @@ public abstract class User
         System.out.println("ID del doctor: "+id);
     }
 
+    //metodos abstractos
+    public abstract void showDataUser();
 }
