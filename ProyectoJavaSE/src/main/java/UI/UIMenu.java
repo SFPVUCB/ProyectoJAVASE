@@ -88,6 +88,7 @@ public class UIMenu
                         //obtener el usuario logueado
                         patientlogged=p;
                         //showPatientMenu
+                        UIPatientMenu.showPatientMenu();
                     }
                 }
 

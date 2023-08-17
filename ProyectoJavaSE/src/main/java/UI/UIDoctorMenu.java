@@ -74,7 +74,7 @@ public class UIDoctorMenu
                     responseTime = Integer.valueOf(sc.nextLine());
 
                 }while(responseTime==2);
-                doctorlogged.addAvailableAppointment(date,time);
+                UIMenu.doctorlogged.addAvailableAppointment(date,time);
                 checkDoctorAvailableAppointments(doctorlogged);
             } else if (response==0)
             {

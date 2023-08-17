@@ -18,7 +18,6 @@ public class Doctor extends User
     public String getSpeciality() {
         return speciality;
     }
-
     public void setSpeciality(String speciality) {
         this.speciality = speciality;
     }
@@ -62,13 +61,12 @@ public class Doctor extends User
         }
         //GETTERS AND SETTERS
 
-        public Date getDate()
+        public Date getDate(String DATE)
         {
             return date;
         }
-        public String getDate(String DATE)
+        public String getDate()
         {
-
             return format.format(date);
         }
 
